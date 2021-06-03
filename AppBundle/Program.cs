@@ -12,7 +12,7 @@ namespace AppBundle
             if (args.Length < 2)
             {
                 Console.WriteLine("Usage: file resource=string|assembly");
-                Console.WriteLine("Example: program.exe test=\"Hello World!\" example=Assembly.dll");
+                Console.WriteLine("Example: program.exe test=\"Hello_World!\" example=Assembly.dll");
                 Environment.Exit(1);
             }
 
@@ -33,13 +33,13 @@ namespace AppBundle
                     Error("Invalid resource syntax; you should use: name=value");
                 }
 
-                if (resource[0].StartsWith("\"") && resource[0].EndsWith("\""))
+                if (File.Exists(resource[1]))
                 {
-                    bundle.AddResource(resource[0], resource[1].Substring(1, resource[1].Length - 1));
+                    bundle.AddResource(resource[0], Assembly.LoadFile(resource[1]));
                 }
                 else
                 {
-                    bundle.AddResource(resource[0], Assembly.LoadFile(resource[1]));
+                    bundle.AddResource(resource[0], resource[1].Substring(1, resource[1].Length - 1));
                 }
             }
 
