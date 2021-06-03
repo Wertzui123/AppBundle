@@ -4,7 +4,7 @@ AppBundle is a .NET library that can add resources to your application after its
 # Installing...
 ## ...the bundle generator
 ### ... as a library
-1. Download the <a href="binaries/AppBundle.dll">AppBundle.dll</a> here
+1. Download the <a href="binaries/AppBundle.dll?raw=true">AppBundle.dll</a> here
 2. Add the DLL to your application
 3. Use a code snippet similar to this to generate a bundle:
     ```cs
@@ -17,7 +17,7 @@ AppBundle is a .NET library that can add resources to your application after its
 
 ### ... as a standalone application
 ### Windows
-1. Download the <a href="binaries/AppBundle.exe">AppBundle.exe</a> here
+1. Download the <a href="binaries/AppBundle.exe?raw=true">AppBundle.exe</a> here
 2. Place it where you need it
 3. Run a command similar to this:
     ```
@@ -25,7 +25,7 @@ AppBundle is a .NET library that can add resources to your application after its
     ```
 
 ### Linux
-1. Download the <a href="binaries/AppBundle">AppBundle executable</a> here
+1. Download the <a href="binaries/AppBundle?raw=true">AppBundle executable</a> here
 2. Place it where you need it
 3. Run a command similar to this:
     ```
@@ -33,7 +33,7 @@ AppBundle is a .NET library that can add resources to your application after its
     ```
 
 ## ... the bundle loader
-1. Download the <a href="binaries/AppBundleLoader.dll">AppBundleLoader.dll</a> here
+1. Download the <a href="binaries/AppBundleLoader.dll?raw=true">AppBundleLoader.dll</a> here
 2. Add the dll your application
 3. Call <code>AppBundle.Loader.Main()</code> at the start of your main method
 4. Move all code (except the code from step 3) in your main method to a new method and call that method from your main method (this is only needed if you bundle DLLs into your app):
