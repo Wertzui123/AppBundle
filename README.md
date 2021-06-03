@@ -1,5 +1,5 @@
 # AppBundle
-AppBundle is a .NET library which can add resources to your application after its compilation.
+AppBundle is a .NET library that can add resources to your application after its compilation.
 
 # Installing...
 ## ...the bundle generator
